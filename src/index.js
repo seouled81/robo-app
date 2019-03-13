@@ -8,7 +8,7 @@ import App from './containers/App';
 import {searchRobots, requestRobots } from './reducers';
 import './index.css';
 import 'tachyons';
-import * as serviceWorker from './serviceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
 const logger = createLogger();
 
@@ -30,4 +30,4 @@ const app = (
 
 ReactDOM.render(app, document.getElementById('root'));
 
-serviceWorker.unregister();
+registerServiceWorker();
